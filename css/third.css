@@ -1,0 +1,29 @@
+.cont {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 250px;
+  grid-template-areas:
+    "h h h h h h"
+    "m m m . s s"
+    "m m m . f .";
+}
+
+.sect1 {
+  grid-area: h;
+  color: brown;
+}
+.sect2 {
+  grid-area: m;
+  color: blue;
+}
+.sect3 {
+  grid-area: s;
+  color: yellow;
+}
+.sect4 {
+  grid-area: f;
+  color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
